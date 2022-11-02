@@ -12,9 +12,10 @@ def setInterval(timer, task):
 
 def perform_poke():
     global notified
-    res = requester.poke_superdoc("Stefan Stefanov")
+    res = requester.poke_easydoc("Elka Kacarska")
+
     if res and not notified:
-        #mailSender.send_mail_sendgrid(["stoychev.st2@gmail.com", "s_savek@yahoo.com"], "Superdoc crawler result", f'<strong>{res}</strong>')
+        mailSender.send_mail_sendgrid(["stoychev.st2@gmail.com", "s_savek@yahoo.com"], "Superdoc crawler result", f'<strong>{res}</strong>')
         notified = True
     
     return notified

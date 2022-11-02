@@ -38,4 +38,28 @@ def poke_superdoc(name):
           return f"New appointment slot for {name}: {appointment['date']}! {data['url']}" 
     else:
         print(f'[{datetime.now()}] -- {r.status_code}')
-        return None
+        
+    return None
+
+def poke_easydoc(name):
+    with open(os.path.join(os.path.dirname(__file__), "doctors.json"), "r") as jsonfile:
+        fileData = json.load(jsonfile)
+        data = fileData[name]
+        print("Read successful")
+    
+    url = data["apiUrl"]
+    r = requests.post(url, json = data["body"], headers = {"Content-Type": "application/json;charset=utf-8", "Accept": "application/json"}) if data["type"] == "POST" else requests.get(url)
+
+    if r.status_code >= 200 and r.status_code < 300:
+        result_json = r.json()
+        #print(result_json)
+        appointment = result_json['first_available_slot']
+        resp_message = result_json['first_available_slot_message']
+        print(f'[{datetime.now()}] -- {r.status_code} -- {resp_message}')
+
+        if appointment and not "Няма намерен свободен час" in resp_message:
+          return f"New appointment slot for {name}: {resp_message}! {data['url']}" 
+    else:
+        print(f'[{datetime.now()}] -- {r.status_code}')
+    
+    return None
