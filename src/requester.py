@@ -20,7 +20,7 @@ def poke_goethe():
     print(r.text)
 
 def poke_superdoc(name):
-    with open(os.path.join(os.path.dirname(__file__), "doctors.json"), "r") as jsonfile:
+    with open(os.path.join(os.path.dirname(__file__), "doctors-super.json"), "r") as jsonfile:
         fileData = json.load(jsonfile)
         data = fileData[name]
         print("Read successful")
@@ -42,7 +42,7 @@ def poke_superdoc(name):
     return None
 
 def poke_easydoc(name):
-    with open(os.path.join(os.path.dirname(__file__), "doctors.json"), "r") as jsonfile:
+    with open(os.path.join(os.path.dirname(__file__), "doctors-easy.json"), "r") as jsonfile:
         fileData = json.load(jsonfile)
         data = fileData[name]
         print("Read successful")
