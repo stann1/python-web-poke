@@ -30,7 +30,8 @@ def poke_superdoc(name):
 
     if r.status_code >= 200 and r.status_code < 300:
         result_json = r.json()
-        appointment = result_json['calendar']['earliestFree']
+        #print(result_json)
+        appointment = result_json['calendar']['earliestSlot']
         print(f'[{datetime.now()}] -- {r.status_code} -- {appointment}')
 
         match_date = data["refDate"]
