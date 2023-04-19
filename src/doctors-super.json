@@ -1,4 +1,5 @@
 {
-    "Stefan Stefanov": { "apiUrl": "https://superdoc.bg/calendar/855/today/7", "url": "https://superdoc.bg/lekar/prof-stefan-stefanov-4453", "refDate": "2022-04-14" },
-    "Vasilis Furlakis": { "apiUrl": "https://superdoc.bg/calendar/4079/today/7", "url": "https://superdoc.bg/lekar/d-r-vasilis-furlakis-4845", "refDate": "2022-04-14" }
+    "StefanStefanov": { "apiUrl": "https://superdoc.bg/calendar/855/today/7", "url": "https://superdoc.bg/lekar/prof-stefan-stefanov-4453", "refDate": "2022-04-14" },
+    "VasilisFurlakis": { "apiUrl": "https://superdoc.bg/calendar/4079/today/7", "url": "https://superdoc.bg/lekar/d-r-vasilis-furlakis-4845", "refDate": "2022-04-14" },
+    "SvetlanaGancheva": { "apiUrl": "https://superdoc.bg/calendar/7060/today/7", "url": "https://superdoc.bg/lekar/svetlana-gancheva", "refDate": "2022-04-26" }
 }
