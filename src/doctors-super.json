@@ -1,5 +1,6 @@
 {
     "StefanStefanov": { "apiUrl": "https://superdoc.bg/calendar/855/today/7", "url": "https://superdoc.bg/lekar/prof-stefan-stefanov-4453", "dateUntil": "2023-06-01", "dateFrom": "2023-05-01" },
     "VasilisFurlakis": { "apiUrl": "https://superdoc.bg/calendar/4079/today/7", "url": "https://superdoc.bg/lekar/d-r-vasilis-furlakis-4845", "dateUntil": "2023-06-01", "dateFrom": "2023-05-01" },
-    "SvetlanaGancheva": { "apiUrl": "https://superdoc.bg/calendar/7060/today/7", "url": "https://superdoc.bg/lekar/svetlana-gancheva", "dateUntil": "2023-06-01", "dateFrom": "2023-05-01" }
+    "SvetlanaGancheva": { "apiUrl": "https://superdoc.bg/calendar/7060/today/7", "url": "https://superdoc.bg/lekar/svetlana-gancheva", "dateUntil": "2023-06-01", "dateFrom": "2023-05-01" },
+    "CvetelinaVelikova": { "apiUrl": "https://superdoc.bg/calendar/6349/today/7", "url": "https://superdoc.bg/lekar/tsvetelina-velikova-dm", "dateUntil": "2023-07-01", "dateFrom": "2023-05-01" }
 }
