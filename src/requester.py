@@ -34,8 +34,9 @@ def poke_superdoc(name):
         appointment = result_json['calendar']['earliestSlot']
         print(f'[{datetime.now()}] -- {r.status_code} -- {appointment}')
 
-        match_date = data["refDate"]
-        if appointment['date'] < match_date:
+        match_end_date = data["dateUntil"]
+        match_start_date = data["dateFrom"]
+        if match_start_date <= appointment['date'] and appointment['date'] <= match_end_date:
           return f"New appointment slot for {name}: {appointment['date']}! {data['url']}" 
     else:
         print(f'[{datetime.now()}] -- {r.status_code}')

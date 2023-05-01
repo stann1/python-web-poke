@@ -14,7 +14,8 @@ def setInterval(timer, task):
 def perform_poke():
     global notified
     if len(sys.argv) < 3:
-        raise ValueError("Missing arguments for {targetplatform} and {target}")
+        print("Missing arguments for {targetplatform} and {target}")
+        print(f'Usage example: main.py easydoc "Doctor Jones"')
     
     platform = sys.argv[1]
     target = sys.argv[2]
