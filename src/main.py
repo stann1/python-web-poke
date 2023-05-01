@@ -3,6 +3,8 @@ import mailSender
 import requester
 from threading import Timer
 
+# usage: main.py superdoc DrDre
+
 notified = False
 REQ_INTERVAL_SECONDS = 10 * 60  # 10 minutes
 
